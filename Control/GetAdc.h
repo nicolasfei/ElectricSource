@@ -72,7 +72,7 @@
 #define AC_115V_INV_FACTOR	(1)
 #define AC_115V_INI_FACTOR	(1)
 
-#define AC_380V_INV_FACTOR	(1)
+#define AC_380V_INV_FACTOR	(5.5)
 #define AC_380V_INI_FACTOR	(1)
 
 #define AC_220V_INV_FACTOR	(24)
@@ -97,7 +97,7 @@
 #define AC_115V_INV_B		(0)
 #define AC_115V_INI_B		(0)
 
-#define AC_380V_INV_B		(0)
+#define AC_380V_INV_B		(833.28)
 #define AC_380V_INI_B		(0)
 
 #define AC_220V_INV_B		(-12608)
