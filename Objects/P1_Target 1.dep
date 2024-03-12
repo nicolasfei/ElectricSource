@@ -1,0 +1,1966 @@
+Dependencies for Project 'P1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c)(0x64E316F5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\CMSIS\GD\GD32F4xx\Source\ARM\startup_gd32f450_470.s)(0x64E316F4)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "GD32F450 SETA 1"--list .\listings\startup_gd32f450_470.lst --xref -o .\objects\startup_gd32f450_470.o --depend .\objects\startup_gd32f450_470.d)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_adc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_adc.o --omf_browse .\objects\gd32f4xx_adc.crf --depend .\objects\gd32f4xx_adc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_can.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_can.o --omf_browse .\objects\gd32f4xx_can.crf --depend .\objects\gd32f4xx_can.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_crc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_crc.o --omf_browse .\objects\gd32f4xx_crc.crf --depend .\objects\gd32f4xx_crc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_ctc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_ctc.o --omf_browse .\objects\gd32f4xx_ctc.crf --depend .\objects\gd32f4xx_ctc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dac.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_dac.o --omf_browse .\objects\gd32f4xx_dac.crf --depend .\objects\gd32f4xx_dac.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dbg.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_dbg.o --omf_browse .\objects\gd32f4xx_dbg.crf --depend .\objects\gd32f4xx_dbg.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dci.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_dci.o --omf_browse .\objects\gd32f4xx_dci.crf --depend .\objects\gd32f4xx_dci.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dma.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_dma.o --omf_browse .\objects\gd32f4xx_dma.crf --depend .\objects\gd32f4xx_dma.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_enet.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_enet.o --omf_browse .\objects\gd32f4xx_enet.crf --depend .\objects\gd32f4xx_enet.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_exmc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_exmc.o --omf_browse .\objects\gd32f4xx_exmc.crf --depend .\objects\gd32f4xx_exmc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_exti.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_exti.o --omf_browse .\objects\gd32f4xx_exti.crf --depend .\objects\gd32f4xx_exti.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_fmc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_fmc.o --omf_browse .\objects\gd32f4xx_fmc.crf --depend .\objects\gd32f4xx_fmc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_fwdgt.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_fwdgt.o --omf_browse .\objects\gd32f4xx_fwdgt.crf --depend .\objects\gd32f4xx_fwdgt.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_gpio.c)(0x65A511E0)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_gpio.o --omf_browse .\objects\gd32f4xx_gpio.crf --depend .\objects\gd32f4xx_gpio.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_i2c.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_i2c.o --omf_browse .\objects\gd32f4xx_i2c.crf --depend .\objects\gd32f4xx_i2c.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_ipa.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_ipa.o --omf_browse .\objects\gd32f4xx_ipa.crf --depend .\objects\gd32f4xx_ipa.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_iref.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_iref.o --omf_browse .\objects\gd32f4xx_iref.crf --depend .\objects\gd32f4xx_iref.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_misc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_misc.o --omf_browse .\objects\gd32f4xx_misc.crf --depend .\objects\gd32f4xx_misc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_pmu.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_pmu.o --omf_browse .\objects\gd32f4xx_pmu.crf --depend .\objects\gd32f4xx_pmu.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_rcu.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_rcu.o --omf_browse .\objects\gd32f4xx_rcu.crf --depend .\objects\gd32f4xx_rcu.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_rtc.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_rtc.o --omf_browse .\objects\gd32f4xx_rtc.crf --depend .\objects\gd32f4xx_rtc.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_sdio.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_sdio.o --omf_browse .\objects\gd32f4xx_sdio.crf --depend .\objects\gd32f4xx_sdio.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_spi.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_spi.o --omf_browse .\objects\gd32f4xx_spi.crf --depend .\objects\gd32f4xx_spi.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_syscfg.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_syscfg.o --omf_browse .\objects\gd32f4xx_syscfg.crf --depend .\objects\gd32f4xx_syscfg.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_timer.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_timer.o --omf_browse .\objects\gd32f4xx_timer.crf --depend .\objects\gd32f4xx_timer.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_tli.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_tli.o --omf_browse .\objects\gd32f4xx_tli.crf --depend .\objects\gd32f4xx_tli.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_trng.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_trng.o --omf_browse .\objects\gd32f4xx_trng.crf --depend .\objects\gd32f4xx_trng.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_usart.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_usart.o --omf_browse .\objects\gd32f4xx_usart.crf --depend .\objects\gd32f4xx_usart.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_wwdgt.c)(0x64E316F4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gd32f4xx_wwdgt.o --omf_browse .\objects\gd32f4xx_wwdgt.crf --depend .\objects\gd32f4xx_wwdgt.d)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\Algorithm\UserTimer.lib)(0x6571149D)()
+F (.\Algorithm\Filter.lib)(0x6571164A)()
+F (.\Hardware\Pinout.c)(0x65E86BAD)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pinout.o --omf_browse .\objects\pinout.crf --depend .\objects\pinout.d)
+I (Hardware\Pinout.h)(0x65E86B5F)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\Hardware\SysTick.c)(0x65EFF67F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Hardware\SysTick.h)(0x65ACA912)
+F (.\Hardware\TM1640.c)(0x658E9F7D)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\tm1640.o --omf_browse .\objects\tm1640.crf --depend .\objects\tm1640.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Hardware\TM1640.h)(0x658E9F85)
+F (.\Hardware\usart.c)(0x656E83C4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (Hardware\usart.h)(0x65701DAF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Algorithm\UserTimer.h)(0x64D82453)
+F (.\Hardware\WatchDog.c)(0x656E91CB)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\watchdog.o --omf_browse .\objects\watchdog.crf --depend .\objects\watchdog.d)
+I (Hardware\WatchDog.h)(0x6284FC38)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\Hardware\spi.c)(0x65EFFC4C)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Hardware\spi.h)(0x65A7ADD3)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (.\Control\GetAdc.h)(0x65EFFCDE)
+I (.\Algorithm\filter.h)(0x63B5805A)
+F (.\Hardware\PWM.c)(0x65A5F280)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (Hardware\PWM.h)(0x65BE4969)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\OS\TaskManage.c)(0x65EFF8C8)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\taskmanage.o --omf_browse .\objects\taskmanage.crf --depend .\objects\taskmanage.d)
+I (.\Hardware\usart.h)(0x65701DAF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Control\ErrorControl.h)(0x65AE5F55)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (.\Hardware\SysTick.h)(0x65ACA912)
+I (.\Control\DispParam.h)(0x65D1ECC2)
+I (.\Control\CommIndicator.h)(0x6437C15D)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+I (.\Algorithm\UserTimer.h)(0x64D82453)
+I (.\Hardware\Pinout.h)(0x65E86B5F)
+I (.\Control\GetAdc.h)(0x65EFFCDE)
+I (.\Algorithm\filter.h)(0x63B5805A)
+I (.\Control\OutSwitch.h)(0x65A4DDA6)
+I (.\Control\GetTemp.h)(0x65A4DC41)
+I (.\Control\Ds18b20.h)(0x65AF2F28)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (.\Hardware\PWM.h)(0x65BE4969)
+F (.\Modbus\ModbusSlave.c)(0x657020DF)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\modbusslave.o --omf_browse .\objects\modbusslave.crf --depend .\objects\modbusslave.d)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (Modbus\ModbusSlave.h)(0x656FC8AB)
+I (.\Hardware\usart.h)(0x65701DAF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\Modbus\DataComm.c)(0x65EC32DF)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\datacomm.o --omf_browse .\objects\datacomm.crf --depend .\objects\datacomm.d)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (.\Hardware\usart.h)(0x65701DAF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Modbus\ModbusSlave.h)(0x656FC8AB)
+I (Modbus\DataComm.h)(0x65EC4FFF)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+I (.\Hardware\Pinout.h)(0x65E86B5F)
+F (.\Control\CommIndicator.c)(0x656F1322)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\commindicator.o --omf_browse .\objects\commindicator.crf --depend .\objects\commindicator.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Control\CommIndicator.h)(0x6437C15D)
+I (Control\ErrorControl.h)(0x65AE5F55)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+F (.\Control\DispParam.c)(0x65EC17B5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\dispparam.o --omf_browse .\objects\dispparam.crf --depend .\objects\dispparam.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (Control\DispParam.h)(0x65D1ECC2)
+I (.\Algorithm\Filter.h)(0x63B5805A)
+I (.\Hardware\TM1640.h)(0x658E9F85)
+I (Control\ErrorControl.h)(0x65AE5F55)
+I (.\Algorithm\UserTimer.h)(0x64D82453)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+F (.\Control\ErrorControl.c)(0x65AE5F55)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\errorcontrol.o --omf_browse .\objects\errorcontrol.crf --depend .\objects\errorcontrol.d)
+I (Control\ErrorControl.h)(0x65AE5F55)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+F (.\Control\GetAdc.c)(0x65EFFC70)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\getadc.o --omf_browse .\objects\getadc.crf --depend .\objects\getadc.d)
+I (Control\GetAdc.h)(0x65EFFCDE)
+I (.\Algorithm\filter.h)(0x63B5805A)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+F (.\Control\OutSwitch.c)(0x65D1A787)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\outswitch.o --omf_browse .\objects\outswitch.crf --depend .\objects\outswitch.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (Control\OutSwitch.h)(0x65A4DDA6)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+I (.\Hardware\Pinout.h)(0x65E86B5F)
+I (Control\GetAdc.h)(0x65EFFCDE)
+I (.\Algorithm\filter.h)(0x63B5805A)
+I (Control\ErrorControl.h)(0x65AE5F55)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+F (.\Control\GetTemp.c)(0x65A51DD4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\gettemp.o --omf_browse .\objects\gettemp.crf --depend .\objects\gettemp.d)
+I (Control\GetTemp.h)(0x65A4DC41)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+F (.\Control\Ds18b20.h)(0x65AF2F28)()
+F (.\Control\Ds18b20.c)(0x65EFEF5F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\ds18b20.o --omf_browse .\objects\ds18b20.crf --depend .\objects\ds18b20.d)
+I (Control\Ds18b20.h)(0x65AF2F28)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Hardware\SysTick.h)(0x65ACA912)
+F (.\User\main.c)(0x65EFF8E9)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
+I (.\CMSIS\core_cm4.h)(0x64E316F5)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\CMSIS\core_cmInstr.h)(0x64E316F5)
+I (.\CMSIS\core_cmFunc.h)(0x64E316F5)
+I (.\CMSIS\core_cm4_simd.h)(0x64E316F5)
+I (.\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x64E316F4)
+I (.\User\gd32f4xx_libopt.h)(0x656EA522)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
+I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
+I (.\Hardware\Pinout.h)(0x65E86B5F)
+I (.\Hardware\WatchDog.h)(0x6284FC38)
+I (.\Hardware\SysTick.h)(0x65ACA912)
+I (.\OS\TaskManage.h)(0x63B58059)
+I (.\Hardware\usart.h)(0x65701DAF)
+I (.\Hardware\spi.h)(0x65A7ADD3)
+I (.\Hardware\TM1640.h)(0x658E9F85)
+I (.\Hardware\PWM.h)(0x65BE4969)
+I (.\Control\GetAdc.h)(0x65EFFCDE)
+I (.\Algorithm\filter.h)(0x63B5805A)
+I (.\Control\OutSwitch.h)(0x65A4DDA6)
+I (.\Modbus\DataComm.h)(0x65EC4FFF)
+I (.\Control\Ds18b20.h)(0x65AF2F28)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (.\Control\ErrorControl.h)(0x65AE5F55)
+I (d:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (.\Control\DispParam.h)(0x65D1ECC2)
