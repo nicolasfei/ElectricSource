@@ -1374,7 +1374,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\Hardware\spi.c)(0x65EFFC4C)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+F (.\Hardware\spi.c)(0x65F1A9F0)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1416,7 +1416,7 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (Hardware\spi.h)(0x65A7ADD3)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (.\Control\GetAdc.h)(0x65F052B3)
+I (.\Control\GetAdc.h)(0x65F1A89C)
 I (.\Algorithm\filter.h)(0x63B5805A)
 F (.\Hardware\PWM.c)(0x65A5F280)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
 I (Hardware\PWM.h)(0x65BE4969)
@@ -1507,7 +1507,7 @@ I (.\Modbus\DataComm.h)(0x65EC4FFF)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Algorithm\UserTimer.h)(0x64D82453)
 I (.\Hardware\Pinout.h)(0x65E86B5F)
-I (.\Control\GetAdc.h)(0x65F052B3)
+I (.\Control\GetAdc.h)(0x65F1A89C)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (.\Control\OutSwitch.h)(0x65A4DDA6)
 I (.\Control\GetTemp.h)(0x65A4DC41)
@@ -1734,7 +1734,7 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 F (.\Control\GetAdc.c)(0x65EFFC70)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\getadc.o --omf_browse .\objects\getadc.crf --depend .\objects\getadc.d)
-I (Control\GetAdc.h)(0x65F052B3)
+I (Control\GetAdc.h)(0x65F1A89C)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
@@ -1819,7 +1819,7 @@ I (Control\OutSwitch.h)(0x65A4DDA6)
 I (.\Modbus\DataComm.h)(0x65EC4FFF)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Hardware\Pinout.h)(0x65E86B5F)
-I (Control\GetAdc.h)(0x65F052B3)
+I (Control\GetAdc.h)(0x65F1A89C)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (Control\ErrorControl.h)(0x65AE5F55)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -1954,7 +1954,7 @@ I (.\Hardware\usart.h)(0x65701DAF)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Hardware\TM1640.h)(0x658E9F85)
 I (.\Hardware\PWM.h)(0x65BE4969)
-I (.\Control\GetAdc.h)(0x65F052B3)
+I (.\Control\GetAdc.h)(0x65F1A89C)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (.\Control\OutSwitch.h)(0x65A4DDA6)
 I (.\Modbus\DataComm.h)(0x65EC4FFF)

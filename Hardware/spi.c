@@ -353,16 +353,24 @@ void FilterSpiData()
 	float B[11] = {0};
 	switch(GetChannelID()){
 		case 0:
-			factor[0] = factor[1] = factor[2] = AC_115V_OUTV_ALL_FACTOR;
-			factor[3] = factor[4] = factor[5] = AC_115V_OUTI_ALL_FACTOR;
+			factor[0] = AC_115V_OUTV_ALL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_ALL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_ALL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_ALL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_ALL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_ALL_C_FACTOR;
 			factor[6] = DC_28V1_OUTV_FACTOR;
 			factor[7] = DC_28V1_OUTI_FACTOR;
 			factor[8] = DC_28V2_OUTV_FACTOR;
 			factor[9] = DC_28V2_OUTI_FACTOR;
 			factor[10]=0;
 		
-			B[0] = B[1] = B[2] = AC_115V_OUTV_ALL_B;
-			B[3] = B[4] = B[5] = AC_115V_OUTI_ALL_B;
+			B[0] = AC_115V_OUTV_ALL_A_B;
+			B[1] = AC_115V_OUTV_ALL_B_B;
+			B[2] = AC_115V_OUTV_ALL_C_B;
+			B[3] = AC_115V_OUTI_ALL_A_B;
+			B[4] = AC_115V_OUTI_ALL_B_B;
+			B[5] = AC_115V_OUTI_ALL_C_B;
 			B[6] = DC_28V1_OUTV_B;
 			B[7] = DC_28V1_OUTI_B;
 			B[8] = DC_28V2_OUTV_B;
@@ -370,15 +378,17 @@ void FilterSpiData()
 			B[10]=0;
 			break;
 		case 1:
-		case 2:
-		case 3:
-			factor[0] = factor[1] = factor[2] = AC_115V_OUTV_CHANNEL_FACTOR;
-			factor[3] = factor[4] = factor[5] = AC_115V_OUTI_CHANNEL_FACTOR;
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
 			factor[6] = DC_28V1_OUTV_FACTOR;
 			factor[7] = DC_28V1_OUTI_FACTOR;
 			factor[8] = DC_28V2_OUTV_FACTOR;
 			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INV_FACTOR;
+			factor[10]=	AC_115V_INV_A_FACTOR;
 		
 			B[0] = AC_115V_OUTV_CHANNEL_A_B;
 			B[1] = AC_115V_OUTV_CHANNEL_B_B;
@@ -390,18 +400,70 @@ void FilterSpiData()
 			B[7] = DC_28V1_OUTI_CHANNEL_B;
 			B[8] = DC_28V2_OUTV_CHANNEL_B;
 			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INV_B;		
+			B[10]=	AC_115V_INV_A_B;		
 			break;
-		case 4:
-		case 5:
-		case 6:
-			factor[0] = factor[1] = factor[2] = AC_115V_OUTV_CHANNEL_FACTOR;
-			factor[3] = factor[4] = factor[5] = AC_115V_OUTI_CHANNEL_FACTOR;
+		case 2:
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
 			factor[6] = DC_28V1_OUTV_FACTOR;
 			factor[7] = DC_28V1_OUTI_FACTOR;
 			factor[8] = DC_28V2_OUTV_FACTOR;
 			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INI_FACTOR;
+			factor[10]=	AC_115V_INV_B_FACTOR;
+		
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			B[3] = AC_115V_OUTI_CHANNEL_A_B;
+			B[4] = AC_115V_OUTI_CHANNEL_A_B;
+			B[5] = AC_115V_OUTI_CHANNEL_A_B;
+			B[6] = DC_28V1_OUTV_CHANNEL_B;
+			B[7] = DC_28V1_OUTI_CHANNEL_B;
+			B[8] = DC_28V2_OUTV_CHANNEL_B;
+			B[9] = DC_28V2_OUTI_CHANNEL_B;
+			B[10]=	AC_115V_INV_B_B;		
+			break;
+		case 3:
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
+			factor[6] = DC_28V1_OUTV_FACTOR;
+			factor[7] = DC_28V1_OUTI_FACTOR;
+			factor[8] = DC_28V2_OUTV_FACTOR;
+			factor[9] = DC_28V2_OUTI_FACTOR;
+			factor[10]=	AC_115V_INV_C_FACTOR;
+		
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			B[3] = AC_115V_OUTI_CHANNEL_A_B;
+			B[4] = AC_115V_OUTI_CHANNEL_A_B;
+			B[5] = AC_115V_OUTI_CHANNEL_A_B;
+			B[6] = DC_28V1_OUTV_CHANNEL_B;
+			B[7] = DC_28V1_OUTI_CHANNEL_B;
+			B[8] = DC_28V2_OUTV_CHANNEL_B;
+			B[9] = DC_28V2_OUTI_CHANNEL_B;
+			B[10]=	AC_115V_INV_C_B;		
+			break;
+		case 4:
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
+			factor[6] = DC_28V1_OUTV_FACTOR;
+			factor[7] = DC_28V1_OUTI_FACTOR;
+			factor[8] = DC_28V2_OUTV_FACTOR;
+			factor[9] = DC_28V2_OUTI_FACTOR;
+			factor[10]=	AC_115V_INI_A_FACTOR;
 		
 			
 			B[0] = AC_115V_OUTV_CHANNEL_A_B;
@@ -414,7 +476,59 @@ void FilterSpiData()
 			B[7] = DC_28V1_OUTI_CHANNEL_B;
 			B[8] = DC_28V2_OUTV_CHANNEL_B;
 			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INI_B;
+			B[10]=	AC_115V_INI_A_B;
+			break;
+		case 5:
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
+			factor[6] = DC_28V1_OUTV_FACTOR;
+			factor[7] = DC_28V1_OUTI_FACTOR;
+			factor[8] = DC_28V2_OUTV_FACTOR;
+			factor[9] = DC_28V2_OUTI_FACTOR;
+			factor[10]=	AC_115V_INI_B_FACTOR;
+		
+			
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			B[3] = AC_115V_OUTI_CHANNEL_A_B;
+			B[4] = AC_115V_OUTI_CHANNEL_A_B;
+			B[5] = AC_115V_OUTI_CHANNEL_A_B;
+			B[6] = DC_28V1_OUTV_CHANNEL_B;
+			B[7] = DC_28V1_OUTI_CHANNEL_B;
+			B[8] = DC_28V2_OUTV_CHANNEL_B;
+			B[9] = DC_28V2_OUTI_CHANNEL_B;
+			B[10]=	AC_115V_INI_B_B;
+			break;
+		case 6:
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
+			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
+			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
+			factor[6] = DC_28V1_OUTV_FACTOR;
+			factor[7] = DC_28V1_OUTI_FACTOR;
+			factor[8] = DC_28V2_OUTV_FACTOR;
+			factor[9] = DC_28V2_OUTI_FACTOR;
+			factor[10]=	AC_115V_INI_C_FACTOR;
+		
+			
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			B[3] = AC_115V_OUTI_CHANNEL_A_B;
+			B[4] = AC_115V_OUTI_CHANNEL_A_B;
+			B[5] = AC_115V_OUTI_CHANNEL_A_B;
+			B[6] = DC_28V1_OUTV_CHANNEL_B;
+			B[7] = DC_28V1_OUTI_CHANNEL_B;
+			B[8] = DC_28V2_OUTV_CHANNEL_B;
+			B[9] = DC_28V2_OUTI_CHANNEL_B;
+			B[10]=	AC_115V_INI_C_B;
 			break;
 		case 7:
 			factor[0] = factor[1] = factor[2] = AC_380V_INV_FACTOR;
