@@ -27,7 +27,7 @@
 #define PRESET_STATUS_NUM   10 
 #define FEEDBACK_STATUS_NUM 10
 
-#define HOLD_REG_NUM        (159)
+#define HOLD_REG_NUM        (161)
 #define INPUT_REG_NUM       10
 
 typedef struct
@@ -217,7 +217,9 @@ typedef struct
 		int Ac380VbOutputVoltage;
 		int Ac380VcOutputVoltage;
 		int FanControlValue;				//by bruce--手动控制风机，RunMode运行模式为工作模式（1）且FanControlValue>0的时候，才由本寄存器控制
-		int FanCurrent;
+		int FanControlFeedback;			//by bruce--风机PWM设定值反馈
+		int FanCurrent;							//by bruce--风机电流
+		int FanTemperature;					//by bruce--风机温度
 }T_REG;
 
 void ModbusResponseTask(void);

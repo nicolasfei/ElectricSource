@@ -1,12 +1,13 @@
 #ifndef __PWM_H
 #define __PWM_H 	
 
-#define PERIOD     	999   //20kHz
-#define MAX_DUTY   	999   //60%
-#define HIGH_DUTY   9			//999   //100%
-#define MED_DUTY   	190   //50%
-#define SMALL_DUTY  320   //50%
-#define LOW_DUTY   	550		//249   //25%
+#define PERIOD     	9999	//2k     999   //20kHz
+#define MAX_DUTY   	9999   //100%
+#define HIGH_DUTY   2000   //75%
+#define MED_DUTY   	4500   //50%
+#define SMALL_DUTY  6000   //30%
+#define LOW_DUTY   	8000	 //15%
+#define NONE_DUTY   9900		//0%
 #define MIN_DUTY   	0    	//0%
 
 #define FAN_ID_1		0

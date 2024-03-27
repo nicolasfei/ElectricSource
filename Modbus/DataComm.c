@@ -23,7 +23,8 @@ void ModbusResponseTask(void)
 		
 		//寄存器0--88,154--156为只读寄存器, 其他为RW。这里只拷贝R的寄存器
 		memcpy(s_iHoldReg,&s_tReg, 92*4);
-		memcpy(&s_iHoldReg[154], &s_tReg.Ac380VaOutputVoltage, 5*4);
+		memcpy(&s_iHoldReg[154], &s_tReg.Ac380VaOutputVoltage, 3*4);
+		memcpy(&s_iHoldReg[158], &s_tReg.FanControlFeedback, 3*4);
 		tModbusParam.wUsartPeriph     = USART1;
 		tModbusParam.cSlaveId         = SLAVE_ADDR;
 	
@@ -73,25 +74,7 @@ unsigned char* ReadOnLineVal(void)
 void ModbusRegInit(void)
 {
 		s_tReg.RunMode = 1;		//默认为工作模式			by bruce 2024/03/06
-	
-		s_tReg.Dc28V1Ch1SetVoltage=2850;
-		s_tReg.Dc28VC2h1SetVoltage=2850;
-		
-		s_tReg.Dc28V1Ch2SetVoltage=2850;
-		s_tReg.Dc28VC2h2SetVoltage=2850;
-		
-		s_tReg.Dc28V1Ch3SetVoltage=2850;
-		s_tReg.Dc28VC2h3SetVoltage=2850;
-		
-		s_tReg.Dc28V1Ch4SetVoltage=2850;
-		s_tReg.Dc28VC2h4SetVoltage=2850;
-		
-		s_tReg.Dc28V1Ch5SetVoltage=2850;
-		s_tReg.Dc28VC2h5SetVoltage=2850;
-		
-		s_tReg.Dc28V1Ch6SetVoltage=2850;
-		s_tReg.Dc28VC2h6SetVoltage=2850;
-	
+		s_tReg.FanControlValue=0;
 		//软件版本号赋值
 		s_tReg.Version = 100;
 }

@@ -3,6 +3,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "GetAdc.h"
+#include "DataComm.h"
 
 #define SPI_CS_H     gpio_bit_set(GPIOF,GPIO_PIN_6)  
 #define SPI_CS_L     gpio_bit_reset(GPIOF,GPIO_PIN_6)
@@ -17,7 +18,7 @@
 #define ONE_LPF		0
 #define USE_SORT	1
 #define USE_DATA_COUNT	2
-#define SAMPL_COUNT	100					//采样次数
+#define SAMPL_COUNT	100						//采样次数
 #define SAMPL_LOSS_COUNT	20			//丢弃的数据个数
 
 static T_SPI_DATA spiData[SAMPL_COUNT] = {0};
@@ -345,219 +346,22 @@ void Read_SPI_All()
 void FilterSpiData()
 {
 	int i=0;
+	T_REG *s_tReg = ReadReg();
 	T_SPI_DATA tmp;
 	memset(&tmp, 0, sizeof(T_SPI_DATA));
 	memset(&spiTransientData, 0, sizeof(T_SPI_DATA));
 	
 	float factor[11] = {0};
 	float B[11] = {0};
-	switch(GetChannelID()){
-		case 0:
-			factor[0] = AC_115V_OUTV_ALL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_ALL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_ALL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_ALL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_ALL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_ALL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=0;
-		
-			B[0] = AC_115V_OUTV_ALL_A_B;
-			B[1] = AC_115V_OUTV_ALL_B_B;
-			B[2] = AC_115V_OUTV_ALL_C_B;
-			B[3] = AC_115V_OUTI_ALL_A_B;
-			B[4] = AC_115V_OUTI_ALL_B_B;
-			B[5] = AC_115V_OUTI_ALL_C_B;
-			B[6] = DC_28V1_OUTV_B;
-			B[7] = DC_28V1_OUTI_B;
-			B[8] = DC_28V2_OUTV_B;
-			B[9] = DC_28V2_OUTI_B;
-			B[10]=0;
-			break;
-		case 1:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INV_A_FACTOR;
-		
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INV_A_B;		
-			break;
-		case 2:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INV_B_FACTOR;
-		
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INV_B_B;		
-			break;
-		case 3:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INV_C_FACTOR;
-		
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INV_C_B;		
-			break;
-		case 4:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INI_A_FACTOR;
-		
-			
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INI_A_B;
-			break;
-		case 5:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INI_B_FACTOR;
-		
-			
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INI_B_B;
-			break;
-		case 6:
-			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
-			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
-			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
-			factor[3] = AC_115V_OUTI_CHANNEL_A_FACTOR;
-			factor[4] = AC_115V_OUTI_CHANNEL_B_FACTOR;
-			factor[5] = AC_115V_OUTI_CHANNEL_C_FACTOR;
-			factor[6] = DC_28V1_OUTV_FACTOR;
-			factor[7] = DC_28V1_OUTI_FACTOR;
-			factor[8] = DC_28V2_OUTV_FACTOR;
-			factor[9] = DC_28V2_OUTI_FACTOR;
-			factor[10]=	AC_115V_INI_C_FACTOR;
-		
-			
-			B[0] = AC_115V_OUTV_CHANNEL_A_B;
-			B[1] = AC_115V_OUTV_CHANNEL_B_B;
-			B[2] = AC_115V_OUTV_CHANNEL_C_B;
-			B[3] = AC_115V_OUTI_CHANNEL_A_B;
-			B[4] = AC_115V_OUTI_CHANNEL_A_B;
-			B[5] = AC_115V_OUTI_CHANNEL_A_B;
-			B[6] = DC_28V1_OUTV_CHANNEL_B;
-			B[7] = DC_28V1_OUTI_CHANNEL_B;
-			B[8] = DC_28V2_OUTV_CHANNEL_B;
-			B[9] = DC_28V2_OUTI_CHANNEL_B;
-			B[10]=	AC_115V_INI_C_B;
-			break;
-		case 7:
-			factor[0] = factor[1] = factor[2] = AC_380V_INV_FACTOR;
-			factor[3] = factor[4] = factor[5] = AC_380V_INI_FACTOR;
-			factor[6] = AC_220V_INV_FACTOR;
-			factor[7] = AC_220V_INI_FACTOR;
-			factor[8] = DC_28V3_OUTV_FACTOR;
-			factor[9] = DC_28V3_OUTI_FACTOR;
-			factor[10]=	0;
-		
-			B[0] = B[1] = B[2] = AC_380V_INV_B;
-			B[3] = B[4] = B[5] = AC_380V_INI_B;
-			B[6] = AC_220V_INV_B;
-			B[7] = AC_220V_INI_B;
-			B[8] = DC_28V3_OUTV_B;
-			B[9] = DC_28V3_OUTI_B;
-			B[10]=	0;
-			break;
-		default:
-			break;
-	}
+	
 #if USE_SORT
 	//取中间USE_DATA_COUNT次采集的数据冒泡排序
-	//BubbleSort(&spiData[0], SAMPL_COUNT-0);
+	BubbleSort(&spiData[0], SAMPL_COUNT-0);
 #endif
-	//去除头尾的2个数据，剩下的2个作为有效值
+	//计算数据---（平均法）去除头尾的2个数据，剩下的2个作为有效值
 	for(i=SAMPL_LOSS_COUNT; i<SAMPL_COUNT; i++)
 	{
-		//取最大值
+		//取最大值--求瞬态值
 		spiTransientData.Data0 = (spiTransientData.Data0>spiData[i].Data0)?(spiTransientData.Data0):(spiData[i].Data0);
 		spiTransientData.Data1 = (spiTransientData.Data1>spiData[i].Data1)?(spiTransientData.Data1):(spiData[i].Data1);
 		spiTransientData.Data2 = (spiTransientData.Data2>spiData[i].Data2)?(spiTransientData.Data2):(spiData[i].Data2);
@@ -570,7 +374,7 @@ void FilterSpiData()
 		spiTransientData.Data9 = (spiTransientData.Data9>spiData[i].Data9)?(spiTransientData.Data9):(spiData[i].Data9);
 		spiTransientData.Data10 = (spiTransientData.Data10>spiData[i].Data10)?(spiTransientData.Data10):(spiData[i].Data10);
 		
-		//取平均值
+		//求累加值--求稳态值
 		tmp.Data0 += (spiData[i].Data0);
 		tmp.Data1 += (spiData[i].Data1);
 		tmp.Data2 += (spiData[i].Data2);
@@ -584,19 +388,7 @@ void FilterSpiData()
 		tmp.Data10 += (spiData[i].Data10);
 	}
 	
-	spiTransientData.Data0 = spiTransientData.Data0*factor[0]+B[0];
-	spiTransientData.Data1 = spiTransientData.Data1*factor[1]+B[1];
-	spiTransientData.Data2 = spiTransientData.Data2*factor[2]+B[2];
-	spiTransientData.Data3 = spiTransientData.Data3*factor[3]+B[3];
-	spiTransientData.Data4 = spiTransientData.Data4*factor[4]+B[4];
-	spiTransientData.Data5 = spiTransientData.Data5*factor[5]+B[5];
-	spiTransientData.Data6 = spiTransientData.Data6*factor[6]+B[6];
-	spiTransientData.Data7 = spiTransientData.Data7*factor[7]+B[7];
-	spiTransientData.Data8 = spiTransientData.Data8*factor[8]+B[8];
-	spiTransientData.Data9 = spiTransientData.Data9*factor[9]+B[9];
-	spiTransientData.Data10 = spiTransientData.Data10*factor[10]+B[10];
-	
-
+	//取平均值--求稳态值
 	tmp.Data0 = tmp.Data0/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
 	tmp.Data1 = tmp.Data1/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
 	tmp.Data2 = tmp.Data2/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
@@ -608,6 +400,549 @@ void FilterSpiData()
 	tmp.Data8 = tmp.Data8/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
 	tmp.Data9 = tmp.Data9/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
 	tmp.Data10 = tmp.Data10/(SAMPL_COUNT-SAMPL_LOSS_COUNT);
+	
+	//系数K,B赋值，去除零飘
+	switch(GetChannelID()){
+		case 4:
+			//115V总输出电压
+			if(tmp.Data0<AC115U_OUT_ZERO_DRIFT_A){
+				factor[0] = 0;
+				B[0] = 0;
+			}else{
+				factor[0] = AC_115V_OUTV_ALL_A_FACTOR;
+				B[0] = AC_115V_OUTV_ALL_A_B;
+			}
+			if(tmp.Data1<AC115U_OUT_ZERO_DRIFT_B){
+				factor[1] = 0;
+				B[1] = 0;
+			}else{
+				factor[1] = AC_115V_OUTV_ALL_B_FACTOR;
+				B[1] = AC_115V_OUTV_ALL_B_B;
+			}
+			if(tmp.Data2<AC115U_OUT_ZERO_DRIFT_C){
+				factor[2] = 0;
+				B[2] = 0;
+			}else{
+				factor[2] = AC_115V_OUTV_ALL_C_FACTOR;
+				B[2] = AC_115V_OUTV_ALL_C_B;
+			}
+			//115V总输出电流--在有总电压且分路有输出电压的情况下才显示
+			if(tmp.Data0>=AC115U_OUT_ZERO_DRIFT_A && (s_tReg->AcPowerControl & 0x3F)){
+				factor[3] = AC_115V_OUTI_ALL_A_FACTOR;
+				B[3] = AC_115V_OUTI_ALL_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(tmp.Data1>=AC115U_OUT_ZERO_DRIFT_B && (s_tReg->AcPowerControl & 0x3F)){
+				factor[4] = AC_115V_OUTI_ALL_B_FACTOR;
+				B[4] = AC_115V_OUTI_ALL_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(tmp.Data2>=AC115U_OUT_ZERO_DRIFT_C && (s_tReg->AcPowerControl & 0x3F)){
+				factor[5] = AC_115V_OUTI_ALL_C_FACTOR;
+				B[5] = AC_115V_OUTI_ALL_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+		
+			//28vDC1总输出电压
+			if(tmp.Data6<DC28V1_ZERO_DRIFT){
+				factor[6] = 0;
+				B[6] = 0;
+			}else{
+				factor[6] = DC_28V1_OUTV_FACTOR;
+				B[6] = DC_28V1_OUTV_B;
+			}
+			//28vDC1总输出电流--在有总电压且分路有输出电压的情况下才显示
+			if(tmp.Data6>=DC28V1_ZERO_DRIFT && (s_tReg->DcPowerControl & 0x555)){
+				factor[7] = DC_28V1_OUTI_ALL_FACTOR;
+				B[7] = DC_28V1_OUTI_B;
+			}else{
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			
+			//28vDC2总输出电压
+			if(tmp.Data8<DC28V2_ZERO_DRIFT){
+				factor[8] = 0;
+				B[8] = 0;
+			}else{
+				factor[8] = DC_28V2_OUTV_FACTOR;
+				B[8] = DC_28V2_OUTV_B;
+			}
+			//28vDC2总输出电流--在有总电压且分路有输出电压的情况下才显示
+			if(tmp.Data8>=DC28V2_ZERO_DRIFT && (s_tReg->DcPowerControl & 0xAAA)){
+				factor[9] = DC_28V2_OUTI_ALL_FACTOR;
+				B[9] = DC_28V2_OUTI_B;
+			}else{
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//风扇电流
+			if(s_tReg->FanControlFeedback<9000){
+				factor[10]=	DC_FAN_I_FACTOR;
+				B[10]= DC_FAN_I_B;
+			}else{
+				factor[10]=	0;
+				B[10]= 0;
+			}
+			break;
+		case 6:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x1)){			
+				factor[3] = AC_115V_OUTI_CH1_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH1_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x1)){			
+				factor[4] = AC_115V_OUTI_CH1_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH1_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x1)){	
+				factor[5] = AC_115V_OUTI_CH1_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH1_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x1) && tmp.Data6 > DC28V1_CH1_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH1_FACTOR;
+				B[6] = DC_28V1_OUTV_CH1_B;
+				factor[7] = DC_28V1_OUTI_CH1_FACTOR;
+				B[7] = DC_28V1_OUTI_CH1_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x2) && tmp.Data8 > DC28V2_CH1_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH1_FACTOR;
+				B[8] = DC_28V2_OUTV_CH1_B;
+				factor[9] = DC_28V2_OUTI_CH1_FACTOR;
+				B[9] = DC_28V2_OUTI_CH1_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电压A相
+			if(tmp.Data10 >= AC115U_IN_ZERO_DRIFT_A){
+				factor[10]=	AC_115V_INV_A_FACTOR;
+				B[10]=	AC_115V_INV_A_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}
+			break;
+		case 7:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x2)){			
+				factor[3] = AC_115V_OUTI_CH2_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH2_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x2)){			
+				factor[4] = AC_115V_OUTI_CH2_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH2_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x2)){	
+				factor[5] = AC_115V_OUTI_CH2_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH2_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x4) && tmp.Data6 > DC28V1_CH2_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH2_FACTOR;
+				B[6] = DC_28V1_OUTV_CH2_B;
+				factor[7] = DC_28V1_OUTI_CH2_FACTOR;
+				B[7] = DC_28V1_OUTI_CH2_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x8) && tmp.Data8 > DC28V2_CH2_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH2_FACTOR;
+				B[8] = DC_28V2_OUTV_CH2_B;
+				factor[9] = DC_28V2_OUTI_CH2_FACTOR;
+				B[9] = DC_28V2_OUTI_CH2_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电压A相
+			if(tmp.Data10 >= AC115U_IN_ZERO_DRIFT_B){
+				factor[10]=	AC_115V_INV_B_FACTOR;
+				B[10]=	AC_115V_INV_B_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}	
+			break;
+		case 5:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x4)){			
+				factor[3] = AC_115V_OUTI_CH3_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH3_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x4)){			
+				factor[4] = AC_115V_OUTI_CH3_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH3_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x4)){	
+				factor[5] = AC_115V_OUTI_CH3_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH3_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x10) && tmp.Data6 > DC28V1_CH3_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH3_FACTOR;
+				B[6] = DC_28V1_OUTV_CH3_B;
+				factor[7] = DC_28V1_OUTI_CH3_FACTOR;
+				B[7] = DC_28V1_OUTI_CH3_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x20) && tmp.Data8 > DC28V2_CH3_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH3_FACTOR;
+				B[8] = DC_28V2_OUTV_CH3_B;
+				factor[9] = DC_28V2_OUTI_CH3_FACTOR;
+				B[9] = DC_28V2_OUTI_CH3_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电压A相
+			if(tmp.Data10 >= AC115U_IN_ZERO_DRIFT_C){
+				factor[10]=	AC_115V_INV_C_FACTOR;
+				B[10]=	AC_115V_INV_C_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}	
+			break;
+		case 0:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x8)){			
+				factor[3] = AC_115V_OUTI_CH4_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH4_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x8)){			
+				factor[4] = AC_115V_OUTI_CH4_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH4_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x8)){	
+				factor[5] = AC_115V_OUTI_CH4_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH4_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x40) && tmp.Data6 > DC28V1_CH4_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH4_FACTOR;
+				B[6] = DC_28V1_OUTV_CH4_B;
+				factor[7] = DC_28V1_OUTI_CH4_FACTOR;
+				B[7] = DC_28V1_OUTI_CH4_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x80) && tmp.Data8 > DC28V2_CH4_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH4_FACTOR;
+				B[8] = DC_28V2_OUTV_CH4_B;
+				factor[9] = DC_28V2_OUTI_CH4_FACTOR;
+				B[9] = DC_28V2_OUTI_CH4_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电流A相--有电压才显示电流
+			if(s_tReg->Ac115VaInputVoltage > 0){
+				factor[10]=	AC_115V_INI_A_FACTOR;
+				B[10]=	AC_115V_INI_A_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}
+			break;
+		case 2:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x10)){			
+				factor[3] = AC_115V_OUTI_CH5_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH5_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x10)){			
+				factor[4] = AC_115V_OUTI_CH5_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH5_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x10)){	
+				factor[5] = AC_115V_OUTI_CH5_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH5_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x100) && tmp.Data6 > DC28V1_CH5_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH5_FACTOR;
+				B[6] = DC_28V1_OUTV_CH5_B;
+				factor[7] = DC_28V1_OUTI_CH5_FACTOR;
+				B[7] = DC_28V1_OUTI_CH5_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x200) && tmp.Data8 > DC28V2_CH5_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH5_FACTOR;
+				B[8] = DC_28V2_OUTV_CH5_B;
+				factor[9] = DC_28V2_OUTI_CH5_FACTOR;
+				B[9] = DC_28V2_OUTI_CH5_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电流B相--有电压才显示电流
+			if(s_tReg->Ac115VbInputVoltage > 0){
+				factor[10]=	AC_115V_INI_B_FACTOR;
+				B[10]=	AC_115V_INI_B_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}
+			break;
+		case 1:
+			//115V输出CH1电压显示0
+			factor[0] = AC_115V_OUTV_CHANNEL_A_FACTOR;
+			factor[1] = AC_115V_OUTV_CHANNEL_B_FACTOR;
+			factor[2] = AC_115V_OUTV_CHANNEL_C_FACTOR;
+			B[0] = AC_115V_OUTV_CHANNEL_A_B;
+			B[1] = AC_115V_OUTV_CHANNEL_B_B;
+			B[2] = AC_115V_OUTV_CHANNEL_C_B;
+			//115v通道电流 在有总电压且分路有输出电压的情况下才显示
+			if(s_tReg->Ac115VaOutputVoltage>0 && (s_tReg->AcPowerControl & 0x20)){			
+				factor[3] = AC_115V_OUTI_CH6_A_FACTOR;
+				B[3] = AC_115V_OUTI_CH6_A_B;
+			}else{
+				factor[3] = 0;
+				B[3] = 0;
+			}
+			if(s_tReg->Ac115VbOutputVoltage>0 && (s_tReg->AcPowerControl & 0x20)){			
+				factor[4] = AC_115V_OUTI_CH6_B_FACTOR;
+				B[4] = AC_115V_OUTI_CH6_B_B;
+			}else{
+				factor[4] = 0;
+				B[4] = 0;
+			}
+			if(s_tReg->Ac115VcOutputVoltage>0 && (s_tReg->AcPowerControl & 0x20)){	
+				factor[5] = AC_115V_OUTI_CH6_C_FACTOR;
+				B[5] = AC_115V_OUTI_CH6_C_B;
+			}else{
+				factor[5] = 0;
+				B[5] = 0;
+			}
+			//28vDC1 CH通道电压电流--有总电压 且 ch的通道开关打开 且 值大于零飘值 才显示
+			if(s_tReg->Dc28V1OutputVoltage>0 && (s_tReg->DcPowerControl & 0x400) && tmp.Data6 > DC28V1_CH6_ZERO_DRIFT){
+				factor[6] = DC_28V1_OUTV_CH6_FACTOR;
+				B[6] = DC_28V1_OUTV_CH6_B;
+				factor[7] = DC_28V1_OUTI_CH6_FACTOR;
+				B[7] = DC_28V1_OUTI_CH6_B;
+			}else{
+				factor[6] = 0;
+				B[6] = 0;
+				factor[7] = 0;
+				B[7] = 0;
+			}
+			if(s_tReg->Dc28V2OutputVoltage>0 && (s_tReg->DcPowerControl & 0x800) && tmp.Data8 > DC28V2_CH6_ZERO_DRIFT){
+				factor[8] = DC_28V2_OUTV_CH6_FACTOR;
+				B[8] = DC_28V2_OUTV_CH6_B;
+				factor[9] = DC_28V2_OUTI_CH6_FACTOR;
+				B[9] = DC_28V2_OUTI_CH6_B;
+			}else{
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}
+			
+			//115v输入电流A相--有电压才显示电流
+			if(s_tReg->Ac115VcInputVoltage > 0){
+				factor[10]=	AC_115V_INI_C_FACTOR;
+				B[10]=	AC_115V_INI_C_B;		
+			}else{
+				factor[10]=	0;
+				B[10]=	0;		
+			}
+			break;
+		case 3:
+			//交流380v
+			if(tmp.Data0<AC380U_ZERO_DRIFT_A){
+				factor[0] = 0;
+				B[0] = 0;
+				factor[3] = 0;
+				B[3] = 0;
+			}else{
+				factor[0] = AC_380V_INV_A_FACTOR;
+				B[0] = AC_380V_INV_A_B;
+				factor[3] = AC_380V_INI_A_FACTOR;
+				B[3] = AC_380V_INI_A_B;
+			}
+			if(tmp.Data1<AC380U_ZERO_DRIFT_B){
+				factor[1] = 0;
+				B[1] = 0;
+				factor[4] = 0;
+				B[4] = 0;
+			}else{
+				factor[1] = AC_380V_INV_B_FACTOR;
+				B[1] = AC_380V_INV_B_B;
+				factor[4] = AC_380V_INI_B_FACTOR;
+				B[4] = AC_380V_INI_B_B;
+			}
+			if(tmp.Data2<AC380U_ZERO_DRIFT_C){
+				factor[2] = 0;
+				B[2] = 0;
+				factor[5] = 0;
+				B[5] = 0;
+			}else{
+				factor[2] = AC_380V_INV_C_FACTOR;
+				B[2] = AC_380V_INV_C_B;
+				
+				factor[5] = AC_380V_INI_C_FACTOR;
+				B[5] = AC_380V_INI_C_B;
+			}
+			//交流220v
+			if(tmp.Data6<AC220U_ZERO_DRIFT){
+				factor[6] = 0;
+				factor[7] = 0;
+				B[6] = 0;
+				B[7] = 0;
+			}else{
+				factor[6] = AC_220V_INV_FACTOR;
+				factor[7] = AC_220V_INI_FACTOR;
+				B[6] = AC_220V_INV_B;
+				B[7] = AC_220V_INI_B;
+			}
+			//直流28VDC3
+			if(tmp.Data8<DC28V3_ZERO_DRIFT){
+				factor[8] = 0;
+				B[8] = 0;
+				factor[9] = 0;
+				B[9] = 0;
+			}else{
+				factor[8] = DC_28V3_OUTV_FACTOR;
+				B[8] = DC_28V3_OUTV_B;
+				//28VDC3 控制开关打开才显示电流
+				if(s_tReg->DcPowerControl & 0x1000){		
+					factor[9] = DC_28V3_OUTI_FACTOR;
+					B[9] = DC_28V3_OUTI_B;
+				}else{
+					factor[9] = 0;
+					B[9] = 0;
+				}
+			}
+			
+			factor[10]=	0;
+			B[10]=	0;
+			break;
+		default:
+			break;
+	}
 
 #if ONE_LPF
 	//channel = GetChannelID();
@@ -625,94 +960,32 @@ void FilterSpiData()
 	spiSteadyData.Data9 = (spiSteadyData.Data9*factor[9]+B[9]);///100*100;
 	spiSteadyData.Data10 = (spiSteadyData.Data10*factor[10]+B[10]);///100*100;
 	
-//	//去除零漂
-//	switch(channel){
-//		case 0:
-//			//AC 115V 总输出电压--(A,B,C相)
-//			if(spiSteadyData.Data0<AC_115V_OUTU_ALL_ZERO)
-//				spiSteadyData.Data0=0;
-//			if(spiSteadyData.Data1<AC_115V_OUTU_ALL_ZERO)
-//				spiSteadyData.Data1=0;
-//			if(spiSteadyData.Data2<AC_115V_OUTU_ALL_ZERO)
-//				spiSteadyData.Data2=0;
-//			
-//			//AC 115V 总输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 1:
-//			//AC 115V CH1输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 2:
-//			//AC 115V CH2输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 3:
-//			//AC 115V CH3输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 4:
-//			//AC 115V CH4输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 5:
-//			//AC 115V CH5输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 6:
-//			//AC 115V CH6输出电流--(A,B,C相)
-//			if(spiSteadyData.Data3<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data3=0;
-//			if(spiSteadyData.Data4<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data4=0;
-//			if(spiSteadyData.Data5<AC_115V_OUTI_ZERO)
-//				spiSteadyData.Data5=0;
-//			break;
-//		case 7:
-//			break;
-//	}
 #else
-	spiSteadyData.Data0 = (tmp.Data0*factor[0]+B[0]);///100*100;
-	spiSteadyData.Data1 = (tmp.Data1*factor[1]+B[1]);///100*100;
-	spiSteadyData.Data2 = (tmp.Data2*factor[2]+B[2]);///100*100;
-	spiSteadyData.Data3 = (tmp.Data3*factor[3]+B[3]);///100*100;
-	spiSteadyData.Data4 = (tmp.Data4*factor[4]+B[4]);///100*100;
-	spiSteadyData.Data5 = (tmp.Data5*factor[5]+B[5]);///100*100;
-	spiSteadyData.Data6 = (tmp.Data6*factor[6]+B[6]);///100*100;
-	spiSteadyData.Data7 = (tmp.Data7*factor[7]+B[7]);///100*100;
-	spiSteadyData.Data8 = (tmp.Data8*factor[8]+B[8]);///100*100;
-	spiSteadyData.Data9 = (tmp.Data9*factor[9]+B[9]);///100*100;
-	spiSteadyData.Data10 = (tmp.Data10*factor[10]+B[10]);///100*100;
+	//计算瞬态值
+	spiTransientData.Data0 = spiTransientData.Data0*factor[0]+B[0];
+	spiTransientData.Data1 = spiTransientData.Data1*factor[1]+B[1];
+	spiTransientData.Data2 = spiTransientData.Data2*factor[2]+B[2];
+	spiTransientData.Data3 = spiTransientData.Data3*factor[3]+B[3];
+	spiTransientData.Data4 = spiTransientData.Data4*factor[4]+B[4];
+	spiTransientData.Data5 = spiTransientData.Data5*factor[5]+B[5];
+	spiTransientData.Data6 = spiTransientData.Data6*factor[6]+B[6];
+	spiTransientData.Data7 = spiTransientData.Data7*factor[7]+B[7];
+	spiTransientData.Data8 = spiTransientData.Data8*factor[8]+B[8];
+	spiTransientData.Data9 = spiTransientData.Data9*factor[9]+B[9];
+	spiTransientData.Data10 = spiTransientData.Data10*factor[10]+B[10];
+	
+	//计算稳态值
+	spiSteadyData.Data0 = (tmp.Data0*factor[0]+B[0]);
+	spiSteadyData.Data1 = (tmp.Data1*factor[1]+B[1]);
+	spiSteadyData.Data2 = (tmp.Data2*factor[2]+B[2]);
+	spiSteadyData.Data3 = (tmp.Data3*factor[3]+B[3]);
+	spiSteadyData.Data4 = (tmp.Data4*factor[4]+B[4]);
+	spiSteadyData.Data5 = (tmp.Data5*factor[5]+B[5]);
+	spiSteadyData.Data6 = (tmp.Data6*factor[6]+B[6]);
+	spiSteadyData.Data7 = (tmp.Data7*factor[7]+B[7]);
+	spiSteadyData.Data8 = (tmp.Data8*factor[8]+B[8]);
+	spiSteadyData.Data9 = (tmp.Data9*factor[9]+B[9]);
+	spiSteadyData.Data10 = (tmp.Data10*factor[10]+B[10]);
 #endif
 
 	count = 0;

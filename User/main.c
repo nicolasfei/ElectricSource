@@ -58,8 +58,12 @@ int main(void)
 		TM1640_IO_Init();
 		TM1640_Disp_Init();
 		PWM_Init();
-		FanTurnOn(FAN_ID_1,LOW_DUTY);			//开机开最小挡位
-		FanTurnOn(FAN_ID_2,LOW_DUTY);			//开机开最小挡位
+	
+		gpio_bit_set(GPIOB,GPIO_PIN_10);		//上电风机不转
+		gpio_bit_set(GPIOB,GPIO_PIN_11);		//上电风机不转
+	
+		//FanTurnOn(FAN_ID_1,LOW_DUTY);			//开机开最小挡位	---pwm控制
+		//FanTurnOn(FAN_ID_2,LOW_DUTY);			//开机开最小挡位
 		
 		DS18B20_Init();
 		Lpf_Init();							//一阶滤波器初始化
@@ -71,12 +75,34 @@ int main(void)
 		DeviceWorkStatus(DEVICE_CHECK_SUCCESS);		//设备自检中
 		
 		for(i=0; i<3; i++){
-		ModbusResponseTask();			//modbus数据交互
-		DelayUs(1000000);
+			ModbusResponseTask();			//modbus数据交互
+			DelayUs(1000000);
 		}
 		DeviceWorkStatus(DEVICE_WORK_NORMAL);			//设备正常工作
 		ModbusResponseTask();			//modbus数据交互
+		/*
+			D12：28VDC3(电压采总电压，电流受控)
+			D13：离散量检测组件1供电
+			D14：离散量检测组件2供电
+			D15：1553B通信组件供电
+		*/
+		T_REG *s_tReg = ReadReg();
+		//先开28VDC3
+		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 12;
+		HC245_Power_Switch_Config();
+		//延迟一秒
+		DelayUs(1000000);
+		//开153B
+		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 15;
+		HC245_Power_Switch_Config();
+		//延迟一秒
+		DelayUs(1000000);
+		//再开离散量
+		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 13;
+		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 14;
+		HC245_Power_Switch_Config();
 		
+		//ADC 通道切换开关归0
 		HC4051_Switch_do(0);
 		
 		//Wdg_Init(800,FWDGT_PSC_DIV64);    	      //与分频数为64,重载值为800,溢出时间为1.28s

@@ -39,10 +39,18 @@ static char HeartBit = 0;
 	*/
 void readFanTemp(void)
 {
-	int value=0;
+	int fanTemp=0;
 	int fanValue=0;
 	T_REG* t_Reg = ReadReg();
-	if(t_Reg->RunMode == 1 && t_Reg->FanControlValue>2)		//上位机手动控制风机
+	
+	fanTemp = DS18B20_ReadTemp(DS18B20_TEMP);		//温度值=实际温度值*10（保留一位小数）
+	if(DS18B20_Temp_Finish(DS18B20_TEMP))
+	{
+		t_Reg->FanTemperature = fanTemp*10+100;
+		t_Reg->Temperature = t_Reg->FanTemperature;					//寄存器值等于实际值*100；
+	}
+	
+	if(t_Reg->RunMode == 1 && t_Reg->FanControlValue>200)		//上位机手动控制风机
 	{
 		FanTurnOn(FAN_ID_1, t_Reg->FanControlValue);
 		FanTurnOn(FAN_ID_2, t_Reg->FanControlValue);
@@ -50,39 +58,21 @@ void readFanTemp(void)
 	}
 	else
 	{
-		value = DS18B20_ReadTemp(DS18B20_Fan);		//温度值=实际温度值*10（保留一位小数）
-		if(DS18B20_Temp_Finish(DS18B20_Fan))
+		if(DS18B20_Temp_Finish(DS18B20_TEMP))
 		{
-			if(value<=200)
-			{
-				FanTurnOn(FAN_ID_1,LOW_DUTY);
-				FanTurnOn(FAN_ID_2,LOW_DUTY);
-				fanValue = LOW_DUTY;
-			}
-			else if(value>200 && value<=300)
-			{
-				FanTurnOn(FAN_ID_1, SMALL_DUTY);
-				FanTurnOn(FAN_ID_2, SMALL_DUTY);
-				fanValue = SMALL_DUTY;
-			}
-			else if(value>300 && value<=500)
-			{
-				FanTurnOn(FAN_ID_1,	MED_DUTY);
-				FanTurnOn(FAN_ID_2, MED_DUTY);
-				fanValue = MED_DUTY;
-			}
-			else
-			{
-				FanTurnOn(FAN_ID_1, HIGH_DUTY);
-				FanTurnOn(FAN_ID_2, HIGH_DUTY);
-				fanValue = HIGH_DUTY;
+			if(!(fanTemp<=0 || fanTemp>1000)){
+				//大于30度开始输出pwm，到60度时候，pwm输出最大；
+				int pwm = -30*fanTemp + 19000;
+				FanTurnOn(FAN_ID_1,pwm);
+				FanTurnOn(FAN_ID_2,pwm);
+				fanValue = pwm;
 			}
 		}
 	}
 	//返回风机设定值给上位机
 	if(fanValue>0)
 	{
-		t_Reg->FanControlValue = fanValue;
+		t_Reg->FanControlFeedback = fanValue;
 	}
 }
 
@@ -97,7 +87,7 @@ void readBoxTemp(void)
 	value = DS18B20_ReadTemp(DS18B20_TEMP);		//温度值=实际温度值*10（保留一位小数）
 	if(DS18B20_Temp_Finish(DS18B20_TEMP))
 	{
-		t_Reg->Temperature = value*10;					//寄存器值等于实际值*100；
+		t_Reg->Temperature = value*10 + 100;					//寄存器值等于实际值*100；
 	}
 }
 
@@ -122,9 +112,9 @@ static void OneMsTask(void)
 		TickCountTask();
 	
 		//SPI读取ADC数据采集
-	gpio_bit_write(GPIOD,GPIO_PIN_1,1);
+	//gpio_bit_write(GPIOD,GPIO_PIN_1,1);
 		Read_SPI_All();
-	gpio_bit_write(GPIOD,GPIO_PIN_1,0);
+	//gpio_bit_write(GPIOD,GPIO_PIN_1,0);
 }
 
 /**********************************************************************
@@ -175,20 +165,20 @@ static void HundredMsTask(void)
 {
 		//线缆检测
 		ReadReg()->CableStatus = Wire_Check();
+
+		//读温度传感器
+		//readBoxTemp();
+		
+		//读取风扇温度
+		readFanTemp();
+	
+		Wdt_Toggle();
 	
 		//modbus数据交互
 		ModbusResponseTask();
 	
 		//控制直/交流电源控制
 		HC245_Power_Switch_Config();
-	
-		//读温度传感器
-		readBoxTemp();
-		
-		//读取风扇温度
-		readFanTemp();
-	
-		Wdt_Toggle();
 		
 		//显示数据到数码管
 		DispUpdateTask();
@@ -199,8 +189,13 @@ static void HundredMsTask(void)
 		}
 		
 		//心跳灯
-//		HeartBit = ~HeartBit;
-//		gpio_bit_write(GPIOD,GPIO_PIN_1,HeartBit);
+		HeartBit = ~HeartBit;
+		if(HeartBit){
+			gpio_bit_set(GPIOD,GPIO_PIN_1);
+		}else{
+			gpio_bit_reset(GPIOD,GPIO_PIN_1);
+		}
+		//gpio_bit_write(GPIOD,GPIO_PIN_1,HeartBit);
 }
 
 /**********************************************************************

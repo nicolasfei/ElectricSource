@@ -354,9 +354,9 @@ void CheckAdcData()
 	T_SPI_DATA tFilterData = GetSpiSteadyData();
 	switch(GetChannelID())
 		{
-		case 0:
+		case 4:
 			break;
-		case 1:
+		case 6:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh1OverVoltageTransientThd>0)
@@ -521,7 +521,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 2:
+		case 7:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh2OverVoltageTransientThd>0)
@@ -681,7 +681,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 3:
+		case 5:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh3OverVoltageTransientThd>0)
@@ -845,7 +845,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 4:
+		case 0:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh4OverVoltageTransientThd>0)
@@ -977,7 +977,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 5:
+		case 2:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh5OverVoltageTransientThd>0)
@@ -1101,7 +1101,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 6:
+		case 1:
 			//µçÑ¹
 			//Ë²Ì¬
 			if(s_tReg->Ac115VCh6OverVoltageTransientThd>0)
@@ -1225,7 +1225,7 @@ void CheckAdcData()
 				}
 			}
 			break;
-		case 7:
+		case 3:
 			break;
 		default:
 			break;

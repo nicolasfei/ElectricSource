@@ -143,6 +143,14 @@ void Port_Init(void)
 		gpio_output_options_set(GPIOD, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ,GPIO_PIN_6);//配置为推挽输出，速度为50M
 		
 		//配置PB12引脚的模式
+		gpio_mode_set(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_PULLDOWN,GPIO_PIN_10);//配置为下拉模式
+		gpio_output_options_set(GPIOD, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ,GPIO_PIN_10);//配置为推挽输出，速度为50M
+		
+		//配置PB12引脚的模式
+		gpio_mode_set(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_PULLDOWN,GPIO_PIN_11);//配置为下拉模式
+		gpio_output_options_set(GPIOD, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ,GPIO_PIN_11);//配置为推挽输出，速度为50M
+		
+		//配置PB12引脚的模式
 		gpio_mode_set(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_PULLDOWN,GPIO_PIN_12);//配置为下拉模式
 		gpio_output_options_set(GPIOD, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ,GPIO_PIN_12);//配置为推挽输出，速度为50M
 		

@@ -43,3 +43,4 @@
 .\objects\spi.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\spi.o: .\Control\GetAdc.h
 .\objects\spi.o: .\Algorithm\filter.h
+.\objects\spi.o: .\Modbus\DataComm.h
