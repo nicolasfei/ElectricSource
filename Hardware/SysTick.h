@@ -5,7 +5,7 @@
 
 #define TASK_START 1
 
-#define TASK_NUM   5
+#define TASK_NUM   3
 
 typedef void (*TASK_FUNC)(void);	
 

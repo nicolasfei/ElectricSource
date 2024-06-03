@@ -215,13 +215,13 @@ void DISP_A_Amp(short Data,char Point)
 		{
 				if(!Hundreds)
 				{
-						Hundreds = 10;
+						//Hundreds = 10;
 				}
 				Thousands = 10;
 		}
 		DisBuf1[0] = SegCode[Thousands];
-		DisBuf1[1] = SegCode[Hundreds];
-		DisBuf1[2] = SegCode[Tens] | Point;
+		DisBuf1[1] = SegCode[Hundreds]| Point;
+		DisBuf1[2] = SegCode[Tens];
 		DisBuf1[3] = SegCode[Ones];
 }
 
@@ -247,13 +247,13 @@ void DISP_B_Amp(short Data,char Point)
 		{
 				if(!Hundreds)
 				{
-						Hundreds = 10;
+						//Hundreds = 10;
 				}
 				Thousands = 10;
 		}
 		DisBuf1[4] = SegCode[Thousands];
-		DisBuf1[5] = SegCode[Hundreds];
-		DisBuf1[6] = SegCode[Tens] | Point;
+		DisBuf1[5] = SegCode[Hundreds]| Point;
+		DisBuf1[6] = SegCode[Tens] ;
 		DisBuf1[7] = SegCode[Ones];
 }
 
@@ -279,13 +279,13 @@ void DISP_C_Amp(short Data,char Point)
 		{
 				if(!Hundreds)
 				{
-						Hundreds = 10;
+						//Hundreds = 10;
 				}
 				Thousands = 10;
 		}
 		DisBuf1[8] = SegCode[Thousands];
-		DisBuf1[9] = SegCode[Hundreds];
-		DisBuf1[10] = SegCode[Tens] | Point;
+		DisBuf1[9] = SegCode[Hundreds] | Point;
+		DisBuf1[10] = SegCode[Tens];
 		DisBuf1[11] = SegCode[Ones];
 }
 
@@ -375,13 +375,13 @@ void DISP_281_Amp(short Data,char Point)
 		{
 				if(!Hundreds)
 				{
-						Hundreds = 10;
+						//Hundreds = 10;
 				}
 				Thousands = 10;
 		}
 		DisBuf2[8] = SegCode[Thousands];
-		DisBuf2[9] = SegCode[Hundreds];
-		DisBuf2[10] = SegCode[Tens] | Point;
+		DisBuf2[9] = SegCode[Hundreds]| Point;
+		DisBuf2[10] = SegCode[Tens] ;
 		DisBuf2[11] = SegCode[Ones];
 }
 
@@ -407,13 +407,13 @@ void DISP_282_Amp(short Data,char Point)
 		{
 				if(!Hundreds)
 				{
-						Hundreds = 10;
+						//Hundreds = 10;
 				}
 				Thousands = 10;
 		}
 		DisBuf2[12] = SegCode[Thousands];
-		DisBuf2[13] = SegCode[Hundreds];
-		DisBuf2[14] = SegCode[Tens] | Point;
+		DisBuf2[13] = SegCode[Hundreds]| Point;
+		DisBuf2[14] = SegCode[Tens] ;
 		DisBuf2[15] = SegCode[Ones];
 }
 
@@ -491,15 +491,15 @@ void DispRunParam(void)
 		DISP_B_Volt(s_tReg->Ac115VbOutputVoltage/10,POINT);
 		DISP_C_Volt(s_tReg->Ac115VcOutputVoltage/10,POINT);
 	
-		DISP_A_Amp(s_tReg->Ac115VaOutputCurrent/10,POINT);
-		DISP_B_Amp(s_tReg->Ac115VbOutputCurrent/10,POINT);
-		DISP_C_Amp(s_tReg->Ac115VcOutputCurrent/10,POINT);
+		DISP_A_Amp(s_tReg->Ac115VaOutputCurrent,POINT);
+		DISP_B_Amp(s_tReg->Ac115VbOutputCurrent,POINT);
+		DISP_C_Amp(s_tReg->Ac115VcOutputCurrent,POINT);
 	
 		DISP_281_Volt(s_tReg->Dc28V1OutputVoltage/10,POINT);
 		DISP_282_Volt(s_tReg->Dc28V2OutputVoltage/10,POINT);
 	
-		DISP_281_Amp(s_tReg->Dc28V1OutputCurrent/10,POINT);
-		DISP_282_Amp(s_tReg->Dc28V2OutputCurrent/10,POINT);
+		DISP_281_Amp(s_tReg->Dc28V1OutputCurrent,POINT);
+		DISP_282_Amp(s_tReg->Dc28V2OutputCurrent,POINT);
 	
 //		//故障显示区域
 //		

@@ -43,6 +43,8 @@ void ModbusResponseTask(void)
 		memcpy(&(s_tReg.RunMode), &s_iHoldReg[89], 65*4);
 		//by bruce 01/27 增加了风机控制寄存器，需要于RunMode联动，RunMode为1时,且FanControlValue>2才有用
 		memcpy(&(s_tReg.FanControlValue), &s_iHoldReg[157], 1*4);
+		//增加，设定总电流寄存器（28V/115V）和补偿总电流寄存器（28V）
+		memcpy(&(s_tReg.Dc28V1CurrentSet), &s_iHoldReg[161], 7*4);
 }
 
 void SetAcDcDio(int ac, int dc)

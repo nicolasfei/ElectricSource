@@ -346,6 +346,547 @@ static int DO_LS2_count=0;
 static int DO_LS3_count=0;
 static int DO_LS4_count=0;
 */
+void CheckAdcDataBak()
+{
+	T_REG *s_tReg = ReadReg();
+	//T_ERROR_REG *v_eReg = ReadErrorReg();
+	
+	//J1-------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh1OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageTransientThd)
+				{
+					DO_AC_CH1_OFF;
+					SetErrorCode(ERR_CH1_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh1OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh1OutputVoltage > s_tReg->Ac115VCh1OverVoltageSteadyThd)
+				{
+					DO_AC_CH1_OFF;
+					SetErrorCode(ERR_CH1_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh1OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentTransientThd)
+				{
+							DO_AC_CH1_OFF;
+							SetErrorCode(ERR_CH1_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh1OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh1OutputCurrent > s_tReg->Ac115VCh1OverCurrentSteadyThd)
+				{
+					DO_AC_CH1_OFF;
+					SetErrorCode(ERR_CH1_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_CH1_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch1OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch1OutputVoltage > s_tReg->Dc28V1Ch1OverVoltageTransientThd)
+				{
+					DO_DC1_CH1_OFF;
+					SetErrorCode(ERR_CH1_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch1OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch1OutputCurrent > s_tReg->Dc28V1Ch1OverCurrentTransientThd)
+				{
+					DO_DC1_CH1_OFF;
+					SetErrorCode(ERR_CH1_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_CH1_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch1OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch1OutputVoltage > s_tReg->Dc28V2Ch1OverVoltageSteadyThd)
+				{
+					DO_DC2_CH1_OFF;
+					SetErrorCode(ERR_CH1_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch1OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch1OutputCurrent > s_tReg->Dc28V2Ch1OverCurrentSteadyThd)
+				{
+					DO_DC2_CH1_OFF;
+					SetErrorCode(ERR_CH1_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+	
+	//J2-------------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh2OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageTransientThd)
+				{
+					DO_AC_CH2_OFF;
+					SetErrorCode(ERR_CH2_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh2OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh2OutputVoltage > s_tReg->Ac115VCh2OverVoltageSteadyThd)
+				{
+					DO_AC_CH2_OFF;
+					SetErrorCode(ERR_CH2_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh2OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentTransientThd)
+				{
+							DO_AC_CH2_OFF;
+							SetErrorCode(ERR_CH2_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh2OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh2OutputCurrent > s_tReg->Ac115VCh2OverCurrentSteadyThd)
+				{
+					DO_AC_CH2_OFF;
+					SetErrorCode(ERR_CH2_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_Ch2_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch2OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch2OutputVoltage > s_tReg->Dc28V1Ch2OverVoltageTransientThd)
+				{
+					DO_DC1_CH2_OFF;
+					SetErrorCode(ERR_CH2_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch2OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch2OutputCurrent > s_tReg->Dc28V1Ch2OverCurrentTransientThd)
+				{
+					DO_DC1_CH2_OFF;
+					SetErrorCode(ERR_CH2_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_Ch2_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch2OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch2OutputVoltage > s_tReg->Dc28V2Ch2OverVoltageSteadyThd)
+				{
+					DO_DC2_CH2_OFF;
+					SetErrorCode(ERR_CH2_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch2OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch2OutputCurrent > s_tReg->Dc28V2Ch2OverCurrentSteadyThd)
+				{
+					DO_DC2_CH2_OFF;
+					SetErrorCode(ERR_CH2_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+	
+	//J3-------------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh3OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageTransientThd)
+				{
+					DO_AC_CH3_OFF;
+					SetErrorCode(ERR_CH3_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh3OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh3OutputVoltage > s_tReg->Ac115VCh3OverVoltageSteadyThd)
+				{
+					DO_AC_CH3_OFF;
+					SetErrorCode(ERR_CH3_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh3OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentTransientThd)
+				{
+							DO_AC_CH3_OFF;
+							SetErrorCode(ERR_CH3_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh3OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh3OutputCurrent > s_tReg->Ac115VCh3OverCurrentSteadyThd)
+				{
+					DO_AC_CH3_OFF;
+					SetErrorCode(ERR_CH3_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_Ch3_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch3OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch3OutputVoltage > s_tReg->Dc28V1Ch3OverVoltageTransientThd)
+				{
+					DO_DC1_CH3_OFF;
+					SetErrorCode(ERR_CH3_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch3OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch3OutputCurrent > s_tReg->Dc28V1Ch3OverCurrentTransientThd)
+				{
+					DO_DC1_CH3_OFF;
+					SetErrorCode(ERR_CH3_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_Ch3_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch3OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch3OutputVoltage > s_tReg->Dc28V2Ch3OverVoltageSteadyThd)
+				{
+					DO_DC2_CH3_OFF;
+					SetErrorCode(ERR_CH3_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch3OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch3OutputCurrent > s_tReg->Dc28V2Ch3OverCurrentSteadyThd)
+				{
+					DO_DC2_CH3_OFF;
+					SetErrorCode(ERR_CH3_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+	
+	//J4-------------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh4OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageTransientThd)
+				{
+					DO_AC_CH4_OFF;
+					SetErrorCode(ERR_CH4_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh4OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh4OutputVoltage > s_tReg->Ac115VCh4OverVoltageSteadyThd)
+				{
+					DO_AC_CH4_OFF;
+					SetErrorCode(ERR_CH4_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh4OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentTransientThd)
+				{
+							DO_AC_CH4_OFF;
+							SetErrorCode(ERR_CH4_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh4OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh4OutputCurrent > s_tReg->Ac115VCh4OverCurrentSteadyThd)
+				{
+					DO_AC_CH4_OFF;
+					SetErrorCode(ERR_CH4_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_Ch4_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch4OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch4OutputVoltage > s_tReg->Dc28V1Ch4OverVoltageTransientThd)
+				{
+					DO_DC1_CH4_OFF;
+					SetErrorCode(ERR_CH4_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch4OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch4OutputCurrent > s_tReg->Dc28V1Ch4OverCurrentTransientThd)
+				{
+					DO_DC1_CH4_OFF;
+					SetErrorCode(ERR_CH4_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_Ch4_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch4OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch4OutputVoltage > s_tReg->Dc28V2Ch4OverVoltageSteadyThd)
+				{
+					DO_DC2_CH4_OFF;
+					SetErrorCode(ERR_CH4_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch4OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch4OutputCurrent > s_tReg->Dc28V2Ch4OverCurrentSteadyThd)
+				{
+					DO_DC2_CH4_OFF;
+					SetErrorCode(ERR_CH4_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+	
+	//J5-------------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh5OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageTransientThd)
+				{
+					DO_AC_CH5_OFF;
+					SetErrorCode(ERR_CH5_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh5OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh5OutputVoltage > s_tReg->Ac115VCh5OverVoltageSteadyThd)
+				{
+					DO_AC_CH5_OFF;
+					SetErrorCode(ERR_CH5_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh5OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentTransientThd)
+				{
+							DO_AC_CH5_OFF;
+							SetErrorCode(ERR_CH5_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh5OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh5OutputCurrent > s_tReg->Ac115VCh5OverCurrentSteadyThd)
+				{
+					DO_AC_CH5_OFF;
+					SetErrorCode(ERR_CH5_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_Ch5_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch5OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch5OutputVoltage > s_tReg->Dc28V1Ch5OverVoltageTransientThd)
+				{
+					DO_DC1_CH5_OFF;
+					SetErrorCode(ERR_CH5_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch5OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch5OutputCurrent > s_tReg->Dc28V1Ch5OverCurrentTransientThd)
+				{
+					DO_DC1_CH5_OFF;
+					SetErrorCode(ERR_CH5_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_Ch5_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch5OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch5OutputVoltage > s_tReg->Dc28V2Ch5OverVoltageSteadyThd)
+				{
+					DO_DC2_CH5_OFF;
+					SetErrorCode(ERR_CH5_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch5OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch5OutputCurrent > s_tReg->Dc28V2Ch5OverCurrentSteadyThd)
+				{
+					DO_DC2_CH5_OFF;
+					SetErrorCode(ERR_CH5_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}		
+	
+	//J6-------------------------------------------------------------------------------------------------------
+			//µÁ—π
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh6OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageTransientThd ||
+						s_tReg->Ac115VbCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageTransientThd ||
+							s_tReg->Ac115VcCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageTransientThd)
+				{
+					DO_AC_CH6_OFF;
+					SetErrorCode(ERR_CH6_115V_T_V);			//…Ë÷√π ’œ¬Î
+				}			
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh6OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageSteadyThd ||
+						s_tReg->Ac115VbCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageSteadyThd ||
+							s_tReg->Ac115VcCh6OutputVoltage > s_tReg->Ac115VCh6OverVoltageSteadyThd)
+				{
+					DO_AC_CH6_OFF;
+					SetErrorCode(ERR_CH6_115V_S_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			//À≤Ã¨
+			if(s_tReg->Ac115VCh6OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Ac115VaCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentTransientThd ||
+									s_tReg->Ac115VbCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentTransientThd ||
+										s_tReg->Ac115VcCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentTransientThd)
+				{
+							DO_AC_CH6_OFF;
+							SetErrorCode(ERR_CH6_115V_T_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//Œ»Ã¨
+			if(s_tReg->Ac115VCh6OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Ac115VaCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentSteadyThd ||
+						s_tReg->Ac115VbCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentSteadyThd ||
+							s_tReg->Ac115VcCh6OutputCurrent > s_tReg->Ac115VCh6OverCurrentSteadyThd)
+				{
+					DO_AC_CH6_OFF;
+					SetErrorCode(ERR_CH6_115V_S_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+		
+			
+			//28_Ch6_V1--À≤Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V1Ch6OverVoltageTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch6OutputVoltage > s_tReg->Dc28V1Ch6OverVoltageTransientThd)
+				{
+					DO_DC1_CH6_OFF;
+					SetErrorCode(ERR_CH6_28VDC1_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V1Ch6OverCurrentTransientThd>0)
+			{
+				if(s_tReg->Dc28V1Ch6OutputCurrent > s_tReg->Dc28V1Ch6OverCurrentTransientThd)
+				{
+					DO_DC1_CH6_OFF;
+					SetErrorCode(ERR_CH6_28VDC1_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			
+			//28_Ch6_V2--Œ»Ã¨
+			//µÁ—π
+			if(s_tReg->Dc28V2Ch6OverVoltageSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch6OutputVoltage > s_tReg->Dc28V2Ch6OverVoltageSteadyThd)
+				{
+					DO_DC2_CH6_OFF;
+					SetErrorCode(ERR_CH6_28VDC2_V);		//…Ë÷√π ’œ¬Î
+				}
+			}
+			//µÁ¡˜
+			if(s_tReg->Dc28V2Ch6OverCurrentSteadyThd>0)
+			{
+				if(s_tReg->Dc28V2Ch6OutputCurrent > s_tReg->Dc28V2Ch6OverCurrentSteadyThd)
+				{
+					DO_DC2_CH6_OFF;
+					SetErrorCode(ERR_CH6_28VDC2_I);		//…Ë÷√π ’œ¬Î
+				}
+			}
+}
+
+
 void CheckAdcData()
 {
 	T_REG *s_tReg = ReadReg();

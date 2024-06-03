@@ -33,6 +33,7 @@
 #include "stdint.h"
 
 static char HeartBit = 0;
+static char HeartDiv = 0;
 
 /**
 	*	读取风机温度
@@ -41,13 +42,14 @@ void readFanTemp(void)
 {
 	int fanTemp=0;
 	int fanValue=0;
+	int pwm;
 	T_REG* t_Reg = ReadReg();
 	
 	fanTemp = DS18B20_ReadTemp(DS18B20_TEMP);		//温度值=实际温度值*10（保留一位小数）
 	if(DS18B20_Temp_Finish(DS18B20_TEMP))
 	{
-		t_Reg->FanTemperature = fanTemp*10+100;
-		t_Reg->Temperature = t_Reg->FanTemperature;					//寄存器值等于实际值*100；
+		t_Reg->FanTemperature = (fanTemp + 180)*10;			//风机温度高于环境温度5度
+		t_Reg->Temperature = fanTemp*10 + 100;					//寄存器值等于实际值*100；
 	}
 	
 	if(t_Reg->RunMode == 1 && t_Reg->FanControlValue>200)		//上位机手动控制风机
@@ -60,12 +62,23 @@ void readFanTemp(void)
 	{
 		if(DS18B20_Temp_Finish(DS18B20_TEMP))
 		{
-			if(!(fanTemp<=0 || fanTemp>1000)){
-				//大于30度开始输出pwm，到60度时候，pwm输出最大；
-				int pwm = -30*fanTemp + 19000;
+			//在没有开启分路输出的情况下，风机保持小功率运行
+			if((t_Reg->DcPowerControl & 0x0FFF) == 0 && (t_Reg->AcPowerControl & 0x3F) == 0){
+				pwm = 5000;
 				FanTurnOn(FAN_ID_1,pwm);
 				FanTurnOn(FAN_ID_2,pwm);
 				fanValue = pwm;
+			}else{
+				if(!(fanTemp<=0 || fanTemp>1200)){
+					//大于30度开始输出pwm，到60度时候，pwm输出最大；
+					if(fanTemp>600){
+						fanTemp = 600;
+					}
+					pwm = -30*(fanTemp+100) + 19000;			//环境温度+1度 来表示风扇温度
+					FanTurnOn(FAN_ID_1,pwm);
+					FanTurnOn(FAN_ID_2,pwm);
+					fanValue = pwm;
+				}
 			}
 		}
 	}
@@ -119,7 +132,7 @@ static void OneMsTask(void)
 
 /**********************************************************************
 * 函数名称： // static void TenMsTask(void)
-* 功能描述： // 10ms周期运行任务
+* 功能描述： // 100ms周期运行任务
 * 访问的表： //
 * 修改的表： //
 * 输入参数： // 无
@@ -137,17 +150,20 @@ static void TenMsTask(void)
 {
 		//通道切换
 		HC4051_Switch();
+	
 		//ADC数据滤波
 		FilterSpiData();
+		
 		//数据检测
-		CheckAdcData();
+		CheckAdcDataBak();
+	
 		//ADC数据更新
 		UpdateAdcData();
 }
  
 /**********************************************************************
 * 函数名称： // static void HundredMsTask(void)
-* 功能描述： // 100ms周期运行任务
+* 功能描述： // 800ms周期运行任务
 * 访问的表： //
 * 修改的表： //
 * 输入参数： // 无
@@ -168,11 +184,6 @@ static void HundredMsTask(void)
 
 		//读温度传感器
 		//readBoxTemp();
-		
-		//读取风扇温度
-		readFanTemp();
-	
-		Wdt_Toggle();
 	
 		//modbus数据交互
 		ModbusResponseTask();
@@ -180,20 +191,30 @@ static void HundredMsTask(void)
 		//控制直/交流电源控制
 		HC245_Power_Switch_Config();
 		
-		//显示数据到数码管
-		DispUpdateTask();
-		
-		if(*ReadOnLineVal())
+		if(HeartDiv++>4)
 		{
+			//读取风扇温度
+			readFanTemp();
+			
+			//显示数据到数码管
+			DispUpdateTask();
+			
+			if(*ReadOnLineVal())
+			{
 				(*ReadOnLineVal())--;
-		}
+			}
+			
+			//心跳灯
+			HeartBit = ~HeartBit;
+			if(HeartBit){
+				gpio_bit_set(GPIOD,GPIO_PIN_1);
+			}else{
+				gpio_bit_reset(GPIOD,GPIO_PIN_1);
+			}
 		
-		//心跳灯
-		HeartBit = ~HeartBit;
-		if(HeartBit){
-			gpio_bit_set(GPIOD,GPIO_PIN_1);
-		}else{
-			gpio_bit_reset(GPIOD,GPIO_PIN_1);
+			Wdt_Toggle();
+			
+			HeartDiv=0;
 		}
 		//gpio_bit_write(GPIOD,GPIO_PIN_1,HeartBit);
 }
@@ -214,9 +235,9 @@ static void HundredMsTask(void)
 * -----------------------------------------------
 * 2022/11/14	     0001	      XXX
 ***********************************************************************/
-static void FiveHundredsMsTask(void)
-{
-}
+//static void FiveHundredsMsTask(void)
+//{
+//}
 
 /**********************************************************************
 * 函数名称： // static void ThousandMsTask(void)
@@ -234,9 +255,9 @@ static void FiveHundredsMsTask(void)
 * -----------------------------------------------
 * 2022/11/14	     0001	      XXX
 ***********************************************************************/
-static void ThousandMsTask(void)
-{
-}
+//static void ThousandMsTask(void)
+//{
+//}
 
 /**********************************************************************
 * 函数名称： // void TaskManage(void)
@@ -256,7 +277,7 @@ static void ThousandMsTask(void)
 ***********************************************************************/
 void TaskManage(void)
 {
-		TASK_FUNC TaskMap[] = {&OneMsTask,&TenMsTask,&HundredMsTask,&FiveHundredsMsTask,&ThousandMsTask};
+		TASK_FUNC TaskMap[] = {&OneMsTask,&TenMsTask,&HundredMsTask};//,&FiveHundredsMsTask,&ThousandMsTask};
 		TaskProcess(TaskMap);
 }
 

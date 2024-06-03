@@ -48,7 +48,7 @@
 ".\objects\getadc.o"
 ".\objects\outswitch.o"
 ".\objects\gettemp.o"
-".\objects\ds18b20.o"
+".\objects\ds18b20_1.o"
 ".\objects\main.o"
 --strict --scatter ".\Objects\P1.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

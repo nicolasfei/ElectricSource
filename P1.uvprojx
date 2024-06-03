@@ -657,11 +657,6 @@
               <FilePath>.\Control\GetTemp.c</FilePath>
             </File>
             <File>
-              <FileName>Ds18b20.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Control\Ds18b20.h</FilePath>
-            </File>
-            <File>
               <FileName>Ds18b20.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Control\Ds18b20.c</FilePath>

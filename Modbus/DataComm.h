@@ -27,7 +27,7 @@
 #define PRESET_STATUS_NUM   10 
 #define FEEDBACK_STATUS_NUM 10
 
-#define HOLD_REG_NUM        (161)
+#define HOLD_REG_NUM        (168)
 #define INPUT_REG_NUM       10
 
 typedef struct
@@ -220,6 +220,17 @@ typedef struct
 		int FanControlFeedback;			//by bruce--风机PWM设定值反馈
 		int FanCurrent;							//by bruce--风机电流
 		int FanTemperature;					//by bruce--风机温度
+		
+		//新增2024-06-03
+		int Dc28V1CurrentSet;				//输出28VDC1 总电流设定
+		int Dc28V2CurrentSet;				//输出28VDC2 总电流设定
+		
+		int Ac115IaCurrentSet;			//输出115V A相 总电流设定
+		int Ac115IbCurrentSet;			//输出115V B相 总电流设定
+		int Ac115IcCurrentSet;			//输出115V C相 总电流设定
+		
+		int Dc28V1CurrentCompensate;				//输出28VDC1 总电流补偿
+		int Dc28V2CurrentCompensate;				//输出28VDC2 总电流补偿
 }T_REG;
 
 void ModbusResponseTask(void);

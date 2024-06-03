@@ -31,5 +31,6 @@ void HC245_AC_Switch_Config(int value);
 	**	根据采集到的ADC数据（瞬时值，稳定值(滤波值)）来判断，进行开关的操作
 	*/
 void CheckAdcData(void);
+void CheckAdcDataBak(void);
 
 #endif   /*__OUTSWITCH_H_*/

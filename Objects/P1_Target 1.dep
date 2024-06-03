@@ -1,5 +1,5 @@
 Dependencies for Project 'P1', Target 'Target 1': (DO NOT MODIFY !)
-F (.\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c)(0x64E316F5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)
+F (.\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c)(0x660EA1B9)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1172,7 +1172,7 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 F (.\Algorithm\UserTimer.lib)(0x6571149D)()
 F (.\Algorithm\Filter.lib)(0x6571164A)()
-F (.\Hardware\Pinout.c)(0x65F7F390)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pinout.o --omf_browse .\objects\pinout.crf --depend .\objects\pinout.d)
+F (.\Hardware\Pinout.c)(0x6605653E)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pinout.o --omf_browse .\objects\pinout.crf --depend .\objects\pinout.d)
 I (Hardware\Pinout.h)(0x65E86B5F)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
@@ -1212,7 +1212,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\Hardware\SysTick.c)(0x65F44651)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+F (.\Hardware\SysTick.c)(0x663CC285)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1251,7 +1251,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-I (Hardware\SysTick.h)(0x65ACA912)
+I (Hardware\SysTick.h)(0x66211DF5)
 F (.\Hardware\TM1640.c)(0x658E9F7D)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\tm1640.o --omf_browse .\objects\tm1640.crf --depend .\objects\tm1640.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
@@ -1374,7 +1374,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\Hardware\spi.c)(0x65F80383)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+F (.\Hardware\spi.c)(0x665D4DDA)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1416,10 +1416,10 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (Hardware\spi.h)(0x65A7ADD3)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (.\Control\GetAdc.h)(0x66028AF2)
+I (.\Control\GetAdc.h)(0x665D45E5)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (.\Modbus\DataComm.h)(0x65F2C5B9)
-F (.\Hardware\PWM.c)(0x65FC3234)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+F (.\Hardware\PWM.c)(0x6618F741)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
 I (Hardware\PWM.h)(0x65FC2659)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
@@ -1459,7 +1459,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\OS\TaskManage.c)(0x6603CAE6)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\taskmanage.o --omf_browse .\objects\taskmanage.crf --depend .\objects\taskmanage.d)
+F (.\OS\TaskManage.c)(0x6659D2B6)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\taskmanage.o --omf_browse .\objects\taskmanage.crf --depend .\objects\taskmanage.d)
 I (.\Hardware\usart.h)(0x65701DAF)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
@@ -1501,16 +1501,16 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (.\Control\ErrorControl.h)(0x65AE5F55)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (.\Hardware\SysTick.h)(0x65ACA912)
+I (.\Hardware\SysTick.h)(0x66211DF5)
 I (.\Control\DispParam.h)(0x65D1ECC2)
 I (.\Control\CommIndicator.h)(0x6437C15D)
 I (.\Modbus\DataComm.h)(0x65F2C5B9)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Algorithm\UserTimer.h)(0x64D82453)
 I (.\Hardware\Pinout.h)(0x65E86B5F)
-I (.\Control\GetAdc.h)(0x66028AF2)
+I (.\Control\GetAdc.h)(0x665D45E5)
 I (.\Algorithm\filter.h)(0x63B5805A)
-I (.\Control\OutSwitch.h)(0x65A4DDA6)
+I (.\Control\OutSwitch.h)(0x6657395C)
 I (.\Control\GetTemp.h)(0x65A4DC41)
 I (.\Control\Ds18b20.h)(0x65AF2F28)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
@@ -1557,7 +1557,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\Modbus\DataComm.c)(0x65FC2A58)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\datacomm.o --omf_browse .\objects\datacomm.crf --depend .\objects\datacomm.d)
+F (.\Modbus\DataComm.c)(0x66581630)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\datacomm.o --omf_browse .\objects\datacomm.crf --depend .\objects\datacomm.d)
 I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (.\Hardware\usart.h)(0x65701DAF)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
@@ -1644,7 +1644,7 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (Control\CommIndicator.h)(0x6437C15D)
 I (Control\ErrorControl.h)(0x65AE5F55)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (.\Control\DispParam.c)(0x65EC17B5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\dispparam.o --omf_browse .\objects\dispparam.crf --depend .\objects\dispparam.d)
+F (.\Control\DispParam.c)(0x6657473D)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\dispparam.o --omf_browse .\objects\dispparam.crf --depend .\objects\dispparam.d)
 I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (Control\DispParam.h)(0x65D1ECC2)
@@ -1734,8 +1734,8 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (.\Hardware\spi.h)(0x65A7ADD3)
-F (.\Control\GetAdc.c)(0x65FEAF54)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\getadc.o --omf_browse .\objects\getadc.crf --depend .\objects\getadc.d)
-I (Control\GetAdc.h)(0x66028AF2)
+F (.\Control\GetAdc.c)(0x665C2A32)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\getadc.o --omf_browse .\objects\getadc.crf --depend .\objects\getadc.d)
+I (Control\GetAdc.h)(0x665D45E5)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
@@ -1777,7 +1777,7 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (.\Modbus\DataComm.h)(0x65F2C5B9)
-F (.\Control\OutSwitch.c)(0x65F42870)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\outswitch.o --omf_browse .\objects\outswitch.crf --depend .\objects\outswitch.d)
+F (.\Control\OutSwitch.c)(0x6659D2B3)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\outswitch.o --omf_browse .\objects\outswitch.crf --depend .\objects\outswitch.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1816,11 +1816,11 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-I (Control\OutSwitch.h)(0x65A4DDA6)
+I (Control\OutSwitch.h)(0x6657395C)
 I (.\Modbus\DataComm.h)(0x65F2C5B9)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Hardware\Pinout.h)(0x65E86B5F)
-I (Control\GetAdc.h)(0x66028AF2)
+I (Control\GetAdc.h)(0x665D45E5)
 I (.\Algorithm\filter.h)(0x63B5805A)
 I (Control\ErrorControl.h)(0x65AE5F55)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -1864,8 +1864,7 @@ I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-F (.\Control\Ds18b20.h)(0x65AF2F28)()
-F (.\Control\Ds18b20.c)(0x65EFEF5F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\ds18b20.o --omf_browse .\objects\ds18b20.crf --depend .\objects\ds18b20.d)
+F (.\Control\Ds18b20.c)(0x65EFEF5F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\ds18b20_1.o --omf_browse .\objects\ds18b20_1.crf --depend .\objects\ds18b20_1.d)
 I (Control\Ds18b20.h)(0x65AF2F28)
 I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -1907,8 +1906,8 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
-I (.\Hardware\SysTick.h)(0x65ACA912)
-F (.\User\main.c)(0x65FC332C)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Hardware\SysTick.h)(0x66211DF5)
+F (.\User\main.c)(0x66598F25)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\CMSIS -I .\CMSIS\GD\GD32F4xx\Include -I .\GD32F4xx_standard_peripheral\Include -I .\Hardware -I .\Modbus -I .\OS -I .\User -I .\Algorithm -I .\Control-I.\RTE\_Target_1-Id:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-Id:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x64E316F4)
 I (.\CMSIS\core_cm4.h)(0x64E316F5)
 I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1949,15 +1948,15 @@ I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x64E316F4)
 I (.\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x64E316F4)
 I (.\Hardware\Pinout.h)(0x65E86B5F)
 I (.\Hardware\WatchDog.h)(0x6284FC38)
-I (.\Hardware\SysTick.h)(0x65ACA912)
+I (.\Hardware\SysTick.h)(0x66211DF5)
 I (.\OS\TaskManage.h)(0x63B58059)
 I (.\Hardware\usart.h)(0x65701DAF)
 I (.\Hardware\spi.h)(0x65A7ADD3)
 I (.\Hardware\TM1640.h)(0x658E9F85)
 I (.\Hardware\PWM.h)(0x65FC2659)
-I (.\Control\GetAdc.h)(0x66028AF2)
+I (.\Control\GetAdc.h)(0x665D45E5)
 I (.\Algorithm\filter.h)(0x63B5805A)
-I (.\Control\OutSwitch.h)(0x65A4DDA6)
+I (.\Control\OutSwitch.h)(0x6657395C)
 I (.\Modbus\DataComm.h)(0x65F2C5B9)
 I (.\Control\Ds18b20.h)(0x65AF2F28)
 I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)

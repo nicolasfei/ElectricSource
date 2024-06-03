@@ -33,7 +33,7 @@
 
 /* This file refers the CMSIS standard, some adjustments are made according to GigaDevice chips */
 
-#include "gd32f4xx.h"
+#include "gd32f4xx.h"                   // Device header
 
 /* system frequency define */
 #define __IRC16M          (IRC16M_VALUE)            /* internal 16 MHz RC oscillator frequency */

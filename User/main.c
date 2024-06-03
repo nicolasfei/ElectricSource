@@ -49,37 +49,40 @@
 //unsigned short data[16] = {0x3f,0x06,0x5b,0x34f,0x66,0x6d,0x7d,0x07,0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71};
 int main(void)
 { 	
-	int i=0;
-		Port_Init();                //端口初始化
-		HC245_Set();
-		SysTick_Init();
-		Usart1_init(115200);
-		XL2543_Init();
-		TM1640_IO_Init();
-		TM1640_Disp_Init();
-		PWM_Init();
+		int i=0;
+		SysTick_Init();							//初始化系统时钟
 	
+		PWM_Init();													//PWM初始化
 		gpio_bit_set(GPIOB,GPIO_PIN_10);		//上电风机不转
 		gpio_bit_set(GPIOB,GPIO_PIN_11);		//上电风机不转
 	
-		//FanTurnOn(FAN_ID_1,LOW_DUTY);			//开机开最小挡位	---pwm控制
-		//FanTurnOn(FAN_ID_2,LOW_DUTY);			//开机开最小挡位
-		
-		DS18B20_Init();
-		Lpf_Init();							//一阶滤波器初始化
-		
-		ModbusRegInit();				//Modbus 寄存器数据初始化
+		TM1640_IO_Init();						//数码管初始化
+		TM1640_Disp_Init();
+		DispFull();									//数码管显示0
 	
-		DispFull();							//数码管显示0
-	
+		Usart1_init(115200);				//串口初始化
+		ModbusRegInit();						//Modbus 寄存器数据初始化
 		DeviceWorkStatus(DEVICE_CHECK_SUCCESS);		//设备自检中
-		
-		for(i=0; i<3; i++){
+		for(i=0; i<30; i++){
 			ModbusResponseTask();			//modbus数据交互
-			DelayUs(1000000);
+			DelayUs(200000);
 		}
 		DeviceWorkStatus(DEVICE_WORK_NORMAL);			//设备正常工作
 		ModbusResponseTask();			//modbus数据交互
+	
+		Port_Init();                //端口初始化
+		HC245_Set();
+		XL2543_Init();
+		DS18B20_Init();
+		//Lpf_Init();							//一阶滤波器初始化
+		
+		//设备自检完成 等待2S给客户三张板卡上电和28VDC3上电
+		for(i=0; i<20; i++){
+			ModbusResponseTask();			//modbus数据交互
+			DelayUs(200000);
+		}
+		
+		#if 1
 		/*
 			D12：28VDC3(电压采总电压，电流受控)
 			D13：离散量检测组件1供电
@@ -88,20 +91,20 @@ int main(void)
 		*/
 		T_REG *s_tReg = ReadReg();
 		//先开28VDC3
-		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 12;
-		HC245_Power_Switch_Config();
-		//延迟一秒
-		DelayUs(1000000);
+//		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 12;
+//		HC245_Power_Switch_Config();
+//		//延迟一秒
+//		DelayUs(1000000);
 		//开153B
 		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 15;
 		HC245_Power_Switch_Config();
-		//延迟一秒
-		DelayUs(1000000);
-		//再开离散量
-		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 13;
-		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 14;
-		HC245_Power_Switch_Config();
-		
+//		//延迟一秒
+//		DelayUs(1000000);
+//		//再开离散量
+//		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 13;
+//		s_tReg->DcPowerControl  = s_tReg->DcPowerControl | 1<< 14;
+//		HC245_Power_Switch_Config();
+		#endif
 		//ADC 通道切换开关归0
 		HC4051_Switch_do(0);
 		

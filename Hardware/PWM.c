@@ -11,7 +11,6 @@ void PWM_Init(void)
 {
 		timer_parameter_struct timer1_init;
 		timer_oc_parameter_struct timer1_ocintpara;
-	
 		
 		/*	关闭定时器1		*/
 		timer_deinit(TIMER1);

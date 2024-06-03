@@ -3,8 +3,9 @@
 
 #define CAL_INT		(100)
 
-static T_TASK s_tTask[TASK_NUM]={{TASK_END,1,1},{TASK_END,CAL_INT,CAL_INT},{TASK_END,CAL_INT*8,CAL_INT*8},
-																				{TASK_END,CAL_INT*8,CAL_INT*8},{TASK_END,CAL_INT*8,CAL_INT*8}};
+static T_TASK s_tTask[TASK_NUM]={{TASK_END,1,1},{TASK_END,CAL_INT,CAL_INT},{TASK_END,CAL_INT*2,CAL_INT*2},
+																				//{TASK_END,CAL_INT*8,CAL_INT*8},{TASK_END,CAL_INT*8,CAL_INT*8}
+																				};
 
 void TaskSchedule(T_TASK *ptTask);
 
